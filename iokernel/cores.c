@@ -804,8 +804,8 @@ int cores_init(void)
 			cpu_siblings[i] = j;
 		}
 
-		if (siblings == 0)
-			panic("cores: must have hyperthreads enabled");
+		//if (siblings == 0)
+		//	panic("cores: must have hyperthreads enabled");
 	}
 
 	/* assign the dataplane's sibling to linux and the control thread */

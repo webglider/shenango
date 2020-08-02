@@ -7,7 +7,7 @@ CC	= gcc
 AR	= ar
 SPARSE	= sparse
 # uncomment to autodetect MLX5
-# MLX5=$(shell lspci | grep 'ConnectX-5' || echo "")
+MLX5=$(shell lspci | grep 'ConnectX-5' || echo "")
 MLX4=$(shell lspci | grep 'ConnectX-3' || echo "")
 
 CHECKFLAGS = -D__CHECKER__ -Waddress-space

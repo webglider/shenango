@@ -43,6 +43,9 @@ static int cpu_scan_topology(void)
 		}
 	}
 
+	// Hard-coding NUMA count
+	numa_count = 1;
+
 	if (numa_count <= 0 || numa_count > NNUMA) {
 		log_err("cpu: detected %d NUMA nodes, unsupported count.",
 			numa_count);
